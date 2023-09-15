@@ -1,0 +1,12 @@
+[package]
+name = "prueba_api_bitwarden"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bitwarden = { version = "0.3.0", features = ["secrets"] }
+uuid = "1.4.1"
+tokio = { version = "1.32", features = ["macros", "rt-multi-thread"] }
+dotenv = "0.15"
